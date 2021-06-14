@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Good Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css file linked -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/media.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Vaid-ui-Shakya</title>
+</head>
+<body>
+    <header class="vaid-header">
+        <div class="d-flex align-items-center ">
+            <div><img src="./resources/icons/vaid-blue-logo.svg"  class="vaid-icon" alt="vaid-icon"></div>
+            <div class="lang ">Language</div>
+            <div class="lang-menu ml-3">
+                <form name="languages" id="lg-form" action="#" >
+                    <select class="lang-menu">
+                      <option value="English" selected >English</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="British English">British English</option>
+                      <option value="Tamil">Tamil</option>
+                    </select>
+                  </form>
+            </div>
+            <div class="user-profile  ml-auto d-flex align-items-center  position-relative">
+                <span><img src="./resources/img/photo-of-man-wearing-white-shirt-2770600.png" class="profile-pic" alt="profile-pic"></span>
+                <span class="ml-2">Alex Samuel</span>
+                <span class="chevron-down ml-2"><img src="./resources/icons/chevron-down (1).svg" class="up-down" alt="chevron-down"></span>
+                <span class=" chevron-up ml-2"><img src="./resources/icons/chevron-up.svg" class="up-down" alt="chevron-up"></span>
+                <div class="dropdown-content position-absolute">
+                    <div class="each-line">
+                        <span><img src="./resources/icons/user-alt-solid.svg" class="profile-icons" alt=""></span>
+                        <span>My Profile</span>
+                    </div>
+                    <div  class="each-line">
+                        <span><img src="./resources/icons/file-invoice-solid.svg" class="profile-icons"  alt=""></span>
+                        <span>Appointments</span>
+                    </div>
+                    <div class="each-line">
+                        <span><img src="./resources/icons/chatbox.svg" class="profile-icons"  alt=""></span>
+                        <span>Chats</span>
+                    </div>
+                    <div class="each-line">
+                        <span><img src="./resources/icons/settings-sharp.svg" class="profile-icons"  alt=""></span>
+                        <span>Settings</span>
+                    </div>
+                    <div  class="each-line">
+                        <span><img src="./resources/icons/log-out.svg" class="profile-icons"  alt=""></span>
+                        <span>Logout</span>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <!-- Hero-img -->
+    <section class="hero-section hero-img">
+      <div class="all-content">
+
+          <div class="hero-texxt text-center">
+              <span>Introducing Video Consultations.</span><br>
+              <sapan> Don’t delay your health concerns.</span>
+          </div>
+          <div class="d-flex justify-content-center ">
+              <div>
+                <form name="places" id="lg-form" action="#" >
+                    <select class="places-menue">
+                      <option value="English" selected >Bengalore</option>
+                      <option value="Hindi">Mohali</option>
+                      <option value="British English">Ahemdabad</option>
+                      <option value="Tamil">Tamil Nadu</option>
+                    </select>
+                  </form>
+              </div>
+              <div class="position-relative ">
+                  <input type="text" class="input-box" placeholder="Search for a Specialty">
+                  <span><img src="./resources/icons/search-outline.svg" class="serch-icon position-absolute" alt="serch-icon"></span>
+              </div>
+              
+          </div>
+      </div>
+    </section>
+    <!-- what are you lookin for -->
+    <section class="looking-for maintain-width mb-5">
+        <h2 class="heading-part">What are you looking for?</h2>
+        <div class="row mt-4">
+            <div class="col-lg-4 col-sm-12">
+                <div class="first-card">
+                    <h3 class="card-text text-center">Doctor at Home</h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="card-btn btn d-flex justify-content-center">Book Now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="second-card">
+                    <h3 class="card-text text-center ">Visit a Doctor</h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="card-btn btn d-flex justify-content-center">Book Now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="third-card">
+                    <h3 class="card-text text-center">Tele Appointmente</h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="card-btn btn d-flex justify-content-center">Book Now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What kind of doctor do you need -->
+    <section class="kind-of-doctor maintain-width ">
+        <h2 class="heading-part">What kind of doctor do you need ?</h2>
+        <p class="doctors-accros mt-2 mb-4">66 doctors across 7 specialities</p>
+        <div class="row kind-of-dr">
+            <div  class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/woman-getting-a-facial-treatment-3985330.png" class="dr-img" alt="">
+                    <h3 class="doctor-kind">Dermatologist</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/happydoctor@2x.png" class="dr-img"  alt="">
+                    <h3 class="doctor-kind">General Physician</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/download@2x.png" class="dr-img" alt="">
+                    <h3 class="doctor-kind">Psychiatrist</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/images.png"class="dr-img"  alt="">
+                    <h3 class="doctor-kind">Gynecologist</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row kind-of-dr ">
+            <div  class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/unnamed.png" class="dr-img" alt="">
+                    <h3 class="doctor-kind">Endocrinologistst</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/_110894880_gettyimages-1055182908@2x.png" class="dr-img"  alt="">
+                    <h3 class="doctor-kind">Dentists</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                    <img src="./resources/img/GettyImages-495828785-56cf782f3df78cfb37ad2603@2x.png" class="dr-img" alt="">
+                    <h3 class="doctor-kind">Neurologist</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="each-doctor">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class=" maintain-width">
+            <h2 class=" heading-part text-center ">How It Works</h2>
+            <div class="row how-it">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./resources/icons/Group 69.svg" class="calender" alt="calender">
+                        <h4 class="name-type">Pick a time</h4>
+                        <p class="description text-center">We're available 24/7, and you can easily book the service online.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="mid-work d-flex flex-column  align-items-center">
+                        <img src="./resources/icons/Group 71.svg"  class="mobile" alt="mobile">
+                        <h4 class="name-type">Pick a time</h4>
+                        <p class="description text-center">We're available 24/7, and you can easily book the service online.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./resources/icons/Group 70.svg"class="doc" alt="calender">
+                        <h4 class="name-type">Pick a time</h4>
+                        <p class="description text-center">We're available 24/7, and you can easily book the service online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Customers Say the Nicest Things (Ratting) -->
+    <section class="ratting maintain-width ">
+        <h2 class="heading-part text-center">Our Customers Say the Nicest Things</h2>
+        <div class="main-ratting-part d-flex justify-content-between">
+            <div class="loved-by-customers">
+               <div>
+                <h4 class="loved">Loved by customers</h4>
+                <div  class="star-ro">
+                    <span><img src="./resources/icons/star (1).svg" class="star" alt=""></span>
+                    <span><img src="./resources/icons/star (1).svg" class="star" alt=""></span>
+                    <span><img src="./resources/icons/star (1).svg" class="star" alt=""></span>
+                    <span><img src="./resources/icons/star (1).svg" class="star" alt=""></span>
+                    <span><img src="./resources/icons/star (1).svg" class="star" alt=""></span>
+                    <span class="reivews">2.8M reviews</span>
+                </div>
+                <p class="text-left">Genie is the leading provider for home services. Genie Professionals are rated and reviewed by customers like you. Choose the pro you want to work with by adding them to your Pro Team.
+                </p>
+               </div>
+            </div>
+             <!-- user-rattings left -side-->
+            <div class="d-flex position-relative">
+                <div>
+                    <div class="side-by-side left-1 position-relative  ">
+                        <div class="d-flex justify-content-between ">
+                            <div class="profile">
+                                <div class="position-relative ">
+                                    <img src="./resources/img/man-in-white-dress-shirt-holding-suit-jacket-1043474.png" class="left-img">
+                                    <div class="icon-heart-container heart position-absolute ">
+                                        <div class="side-heart-icon d-flex justify-content-center align-items-center align-middle">
+                                            <div><img src="./resources/icons/heart-solid.svg"  class="side-heart" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div >
+                                <h4 class="main-user side-user">Dr. Kevin</h4>
+                                <span class="sm-appointment">124 appointments</span>
+                                <p class="sm-city">Inglewood , CA</p>
+                            </div>
+                        </div>
+                        <div class="ratting-bootom-text position-absolute">
+                            <h4 class="sm-user-name">Kevin's Review </h4>
+                            <div class="all-smal-star"> 
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"><span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                            </div>
+                            <p class="text-after-star">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                        </div>
+                        <div class="right-aro d-flex justify-content-center align-items-center position-absolute">
+                            <img src="./resources/icons/chevron-back.svg" class="chevron" alt="chevron-forward">
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-post position-absolute ">
+                    <div class="user-ratting position-relative">
+                        <div class="d-flex justify-content-between ">
+                            <div class="profile">
+                                <div class="position-relative ">
+                                    <img src="./resources/img/adult-beard-boy-casual-220453.png" class="beard-man">
+                                    <div class="icon-heart-container heart position-absolute ">
+                                        <div class="heart-icon d-flex justify-content-center align-items-center align-middle">
+                                            <div><img src="./resources/icons/heart-solid.svg"  class="heart" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div >
+                                <h4 class="main-user">Dr. Jerry France</h4>
+                                <span class="appointments-big">124 appointments</span>
+                                <p class="new-york">New York , NY</p>
+                            </div>
+                        </div>
+                        <div class="ratting-bootom-text position-absolute">
+                            <h4 class="user-name-r">Dr. Jerry's Review</h4>
+                            <div class="all-smal-star"> 
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"><span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                            </div>
+                            <p class="middle-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                        </div>
+                        <div class="down-three-elipse position-absolute">
+                            <span><img src="./resources/icons/ellipse1.svg" class='elipse' alt=""></span>
+                            <span><img src="./resources/icons/ellipse.svg" class='elipse' alt=""></span>
+                            <span><img src="./resources/icons/ellipse2.svg" class='elipse' alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="side-by-side position-relative ">
+                        <div class="d-flex justify-content-between ">
+                            <div class="profile">
+                                <div class="position-relative ">
+                                    <img src="./resources/img/man-in-white-dress-shirt-holding-suit-jacket-1043474.png" class="left-img">
+                                    <div class="icon-heart-container heart position-absolute ">
+                                        <div class="side-heart-icon d-flex justify-content-center align-items-center align-middle">
+                                            <div><img src="./resources/icons/heart-solid.svg"  class="side-heart" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div >
+                                <h4 class="main-user side-user">Dr. Ronald</h4>
+                                <span class="sm-appointment">124 appointments</span>
+                                <p class="sm-city">Inglewood , CA</p>
+                            </div>
+                        </div>
+                        <div class="ratting-bootom-text position-absolute">
+                            <h4 class="sm-user-name">Kevin's Review</h4>
+                            <div class="all-smal-star"> 
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"><span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                                <span><img src="./resources/icons/star (1).svg" class="smal-star" alt="s-mall-start"></span>
+                            </div>
+                            <p class="text-after-star">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                        </div>
+                        <div class="left-aro d-flex justify-content-center align-items-center position-absolute">
+                            <img src="./resources/icons/chevron-forward.svg" class="chevron" alt="chevron-forward">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+
+       
+    </section>
+    <!-- Cities we Operated -->
+    <section class="cities-operated  " >
+        <h2 class="cities-heading heading-part text-center">Cities we Operated</h2>
+        <div class="row maintain-width">
+            <div class="col-lg-3 col-sm-6 smal-cl ">
+                <div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Aduja</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Amsterdam</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Auckland</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Beirut</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Bengaluru</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Bogota</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Cairo</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Cape Town</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 smal-cl">
+                <div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Chandigarh</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Dakar</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Delhi</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Doha</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Dubai</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Honduras</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Houston</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Hyderabad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 smal-cl">
+                <div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Johannesburg</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Kolkata</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Kuala Lumpur</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Lima</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Londen</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Los Angeles</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Mumbai</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Nairobi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 smal-cl">
+                <div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Paris</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Paterson</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Port of Spain</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Pretoria</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Surat</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Sydney</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Toronto</span>
+                    </div>
+                    <div class="each-city">
+                        <span><img src="./resources/icons/arrow-forward-outline.svg" class="forward-arrro" alt="arrow"></span>
+                        <span class="cities-name">Istanbul</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-part ">
+        <div class=" maintain-width">
+            <div class=" d-flex justify-content-start align-items-center">
+                <div>
+                    <img src="./resources/icons/vaid-white-logo.svg"  class="vaid-white" alt="vaid-logo-footer">
+                </div>
+                <div class="contact-info d-flex">
+                    <h4 class="f-text">Privacy Policy</h4>
+                    <h4 class="f-text">Terms & Conditions</h4>
+                    <h4 class="f-text">About Us</h4>
+                    <h4 class="f-text">Contact Us</h4>
+                    <h4 class="f-text">Blog</h4>
+                </div>
+            </div>
+            <div class=" footer-middle d-flex justify-content-between">
+                <div>
+                    <span ><img src="./resources/icons/appStore.svg"  class="appstore" alt=""></span>
+                    <span class="play-s"><img src="./resources/icons/playStore.svg" class="playstore" alt=""></span>
+                </div>
+                <div class="d-flex">
+                    <div class="icon-bg d-flex align-items-center justify-content-center">
+                        <img src="./resources/icons/facebook-f-brands.svg" class="fb-icon" alt="facebook">
+                    </div>
+                    <div class="icon-bg d-flex align-items-center justify-content-center">
+                        <img src="./resources/icons/twitter-brands.svg" class="twitter-icon" alt="facebook">
+                    </div>
+                    <div class="icon-bg d-flex align-items-center justify-content-center">
+                        <img src="./resources/icons/instagram-brands.svg" class="insta-icon" alt="facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="copy-right text-center">Copyright Appscrip @ 2020 , All Rights Reserved</h5>
+    </footer>
+</body>
+</html>
+
+
