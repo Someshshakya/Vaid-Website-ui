@@ -405,7 +405,7 @@ body {
     width: 100%;
     color: #FFFFFF;
     font-size: 1.23vw;
-    padding:3% 0 3% 0;
+    padding:3% 0 2% 0;
 } 
 
 .vaid-white {
@@ -430,9 +430,9 @@ body {
 .play-s {padding-left: 1vw;}
 .playstore,
 .appstore {width: 10vw;}
-.footer-middle {padding: 5% 0;}
+.footer-middle {padding: 3% 0;}
 .copy-right {
     border-top: 1px solid #FFFFFF;
     font-size: 1.24vw;
-    padding: 3% 0  0 0;
+    padding: 2% 0  0 0;
 }
