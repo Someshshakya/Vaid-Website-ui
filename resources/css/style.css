@@ -30,7 +30,7 @@ body {
     top: 0;
     width: 100%;
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 2;
 }
 
 .vaid-icon {
@@ -48,13 +48,27 @@ body {
 .lang-menu {
     font-size: 1.04vw;
     font-weight: 400;
-    width: 12.02vw;
+    width: 12.02vw !important;
     height: 3vw;
-    background-color: #F0F0F0;
+    background-color: #F0F0F0 !important;
     color: #514747;
     border-width: 0 !important;
     border-radius: 4px !important;
     padding-left: 1%;
+    /* to change the button drop-down icon */
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border: 2px solid #000;
+    background: url(/resources/icons/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-size: 1.8vw 1.8vw;
+    background-position: right 0.7vw;;
+}
+.lang-menu:focus-visible {
+    outline:none !important;
 }
 .profile-pic {width: 3vw;}
 
@@ -74,10 +88,11 @@ body {
     height: 19.5vw;
     top: 52px;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     font-size: 1vw !important;
     font-weight: 400;
 }
+.ellipsis-vertical {display: none;}
 .each-line {
     padding: 1.1vw 0 1.2vw 1vw;
     border-bottom: 1px solid #D4D4D4;
@@ -122,20 +137,37 @@ body {
     color: #666666;
     font-size: 1.2vw;
     font-weight: 400;
-    padding-left: 1vw;
+    padding: 0% 16% 0 3%;
     border-width: 0 !important;
+}
+
+.input-box:focus-visible,
+.places-menue:focus-visible{
+    outline:none !important;
 }
 .places-menue {
     font-size: 1.04vw;
     font-weight: 400;
     width: 13.02vw;
     height: 4.1vw;
-    background-color:#1A54B0;
+    background-color:#1A54B0 !important;
     color: #FFFFFF;
     margin-right: 2vw;
     padding-left: 3vw;
     border-width: 0 !important;
     border-radius: 4px !important;
+
+    /* to change the button drop-down icon */
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border: 2px solid #000;
+    background: url(/resources/icons/chevron-down-w.svg);
+    background-repeat: no-repeat;
+    background-size: 1.6vw 1.6vw;
+    background-position: right 1.3vw;
 }
 .hero-texxt {
     font-size: 3.55vw;
@@ -192,6 +224,7 @@ body {
 .doctors-accros {
     font-size: 1.32vw;
     font-weight: 400;
+    color: #666666;
 }
 .kind-of-dr {margin-bottom: 4%;}
 .doctor-kind {
@@ -207,7 +240,9 @@ body {
 .dr-img {
     width: 19.8vw;
     height: 15.5vw;
+    object-fit: cover;
 }
+
 
 /* ---------------------------------------------------------- */
 /* -------- How it Works ----------- */
@@ -294,15 +329,16 @@ body {
 .side-by-side {
     border-radius: 6px;
     background-color: #F6F5F5;
-    padding: 3% 1.5%;
 }
 .user-ratting {
     width: 25.5vw;
     height: 31.2vw;
+    padding:8%;
 }
 .side-by-side {
     width: 17.2vw;
     height: 22.2vw;
+    padding: 4%;
 }
 .new-york {
     padding-top:8%;
@@ -319,6 +355,8 @@ body {
 .main-user {font-size:1.5vw;}
 .user-name-r {
     font-size: 1.38vw;
+    border-top: 2px dashed #B5AFAF;
+    padding-top: 8%;
 }
 .side-user {
     font-size: 1vw;
@@ -337,7 +375,11 @@ body {
 }
 
 .sm-city {padding-top: 8%;}
-.sm-user-name {font-size:0.89vw ;}
+.sm-user-name {
+    font-size:0.89vw;
+    border-top: 1px dashed #B5AFAF;
+    padding-top: 8%;
+}
 .left-1 {margin-right: 18.1vw;}
 .middle-post {
     left: 25%;
@@ -432,7 +474,7 @@ body {
 .appstore {width: 10vw;}
 .footer-middle {padding: 2% 0;}
 .copy-right {
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #ffffff70;
     font-size: 1.24vw;
     padding: 2% 0  0 0;
 }
