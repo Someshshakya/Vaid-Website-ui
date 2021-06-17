@@ -5,12 +5,15 @@
     .third-card{
         height: 90%;
         margin-bottom: 2vw !important;
+        width: 70%;
+        margin: auto;
+
     }
     .card-btn {
-        width: 18.8vw;
-        height: 5.4vw;
+        width: 11.8vw !important;
+        height: 4vw;
         font-size: 1.5vw !important;
-        padding-top: 2% !important;
+        padding-top: 1% !important;
     }
     .card-text {
         font-size: 3.1vw;
@@ -28,6 +31,7 @@
         margin: 0 !important;
         padding: 5% 0 9% 0!important;
     }
+    .all-cities {padding-left: 20%;}
     
 }
 
@@ -38,13 +42,64 @@
         padding: 25px 15.32vw;
     }
     .kind-of-dr {margin-bottom: 0 !important;}
+    .how-it-works {
+        height: auto;
+        padding-top: 5vw;
+    }
+    .main-ratting-part {
+        padding-top: 9%;
+        flex-direction: column;
+    }
+    .loved-by-customers {
+        margin: auto;
+        padding-bottom: 35%;
+        text-align: center;
+    }
+    .right{
+        margin:auto;
+    }
+    .rate-description {
+        font-size: 1.23vw;
+        text-align: center !important;
+    }
+    .cities-name {font-size: 1.8vw !important;}
+    .forward-arrro { width: 1.4vw;}
+    .all-cities {padding-left: 20%;}
+    
 
 }
-
-@media screen and (max-width: 380px){
+/* 
+@media screen  and (max-width: 625px){
+    .card-btn {
+    width: 13.8vw !important;
+    padding-top: 1% !important;
+    }
     .vaid-header {padding: 10px 5.32vw;}
     .up-down {
         width: 4.5vw;
+    }
+    .each-doctor {
+        width: 100%;
+        margin: auto;
+    }
+    .works {
+        width: 80% !important;
+        margin: auto;
+    }
+    
+} */
+
+@media screen and (max-width: 620px){
+    .heading-part {font-size: 5vw !important; }
+    .vaid-header {padding: 10px 5.32vw;}
+    .up-down {
+        width: 4.5vw;
+    }
+    .first-card, .second-card, .third-card {
+        height: 90%;
+        margin-bottom: 6vw !important;
+        width: 70%;
+        margin: auto;
     }
 
     .lang-menu {
@@ -88,16 +143,15 @@
         top: 40%;
         left: 86%;
     }
-    .heading-part {
-        font-size: 100%;
-    }
     .card-btn { 
         padding-top: 1.4% !important;
-        font-size: 2vw !important;
+        width: 15.8vw !important;
+        font-size: 1.5vw !important;
     }
     .doctors-accros {
         font-size: 3vw !important;
     }
+    .doctor-kind {font-size: 100%;}
     .calender {width: 25%;}
 
     .how-it-works {
@@ -112,13 +166,13 @@
     }
     .description {font-size: 3vw;}
     .mid-work {padding:7% 0;}
-    .star-ro {padding: 0 !important;}
+    .star-ro {padding: 0 0 4% 0 !important;}
     .down-three-elipse {bottom: -18%;}
     .ratting {padding: 3.5% 0 16% 0;}
     .each-city {padding-bottom: 0%;}
     .smal-cl {width: 50% !important;}
     .cities-name {font-size: 3vw;}
-    .forward-arrro {width: 3vw;}
+    .forward-arrro {width: 2vw;}
     .dropdown-content {
         border-radius: 6px;
         width: 46.1vw;
@@ -127,8 +181,44 @@
         top: 40px;
     }
     .profile-icons { width: 3vw;}
-    .user-ratting { height: 48.2vw;}
+    .user-ratting { 
+        width: 35vw;
+        height: 55.2vw;
+    }
+   
+    .beard-man {width: 11vw !important;}
+    .heart-icon {
+        width: 3.2vw;
+        height: 3.2vw;
+    }
+    .main-user {font-size: 2.1vw;}
+    .appointments-big,
+    .new-york {font-size: 1.7vw;}
+    .new-york {padding-top: 0 !important;}
+    .user-name-r {font-size: 1.9vw !important}
+    .smal-star {width: 2vw;}
+    .middle-text {font-size: 2vw;}
+
+    .loved-by-customers {
+        width: 90% !important;
+        padding-bottom: 70% !important;
+    }
+    .rate-description {font-size: 3.5vw;}
+    .loved {font-size: 4.5vw;}
+    .reivews {font-size: 3vw;}
+    .star {width: 2vw;}
+
+    /* side box in ratting */
+    .left-img {width: 8vw;}
+    .left-1 {margin-right: 20vw !important;}
+    .side-by-side {
+        height: 42.2vw;
+        width: 29vw;
+    }
+    .sm-appointment, .sm-city {font-size: 1.8vw;}
+    .text-after-star {font-size: 1.5vw;}
+    .sm-user-name {font-size: 1.7vw;}
+    .all-cities {padding-left: 20%;}
     
-    .side-by-side {height: 38.2vw;}
     
 }

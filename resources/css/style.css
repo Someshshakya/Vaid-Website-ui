@@ -286,6 +286,9 @@ body {
     width: 27.1vw;
     height: 15.9vw;
 }
+.rate-description {
+    font-size: 1.23vw;
+}
 .ratting {padding:3.5% 0 10% 0;}
 .star {width: 1.6vw;}
 .loved {
