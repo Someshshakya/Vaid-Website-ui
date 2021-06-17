@@ -106,7 +106,7 @@
         font-size: 2.5vw;
         width: 14vw !important;
         height: 5.5vw;
-        padding-left: 0 !important;
+        padding-left: 2px !important;
         background-size: 3.8vw 3.8vw !important;
     }
     .lang {
@@ -218,7 +218,8 @@
     .sm-appointment, .sm-city {font-size: 1.8vw;}
     .text-after-star {font-size: 1.5vw;}
     .sm-user-name {font-size: 1.7vw;}
-    .all-cities {padding-left: 20%;}
+    .all-cities {padding-left: 17%;}
+    .cities-name {font-size: 2.5vw !important;}
     
     
 }
