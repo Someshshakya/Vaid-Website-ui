@@ -89,7 +89,7 @@
     
 } */
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 575px){
     .heading-part {font-size: 5vw !important; }
     .vaid-header {padding: 10px 5.32vw;}
     .up-down {
@@ -151,7 +151,7 @@
     .doctors-accros {
         font-size: 3vw !important;
     }
-    .doctor-kind {font-size: 100%;}
+    .doctor-kind {font-size: 80%;}
     .calender {width: 25%;}
 
     .how-it-works {
