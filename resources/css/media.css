@@ -3,9 +3,9 @@
     .first-card,
     .second-card,
     .third-card{
-        height: 90%;
+        height: 100%;
         margin-bottom: 2vw !important;
-        width: 70%;
+        width: 100%;
         margin: auto;
 
     }
@@ -13,10 +13,9 @@
         width: 11.8vw !important;
         height: 4vw;
         font-size: 1.5vw !important;
-        padding-top: 1% !important;
+        padding-top: 2% !important;
     }
     .card-text {
-        font-size: 3.1vw;
         padding-bottom: 2%;
     }
     .dr-img {
@@ -37,7 +36,7 @@
 
 
 /*  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .vaid-header {
         padding: 25px 15.32vw;
     }
@@ -65,29 +64,20 @@
     .cities-name {font-size: 1.8vw !important;}
     .forward-arrro { width: 1.4vw;}
     .all-cities {padding-left: 20%;}
+    .first-card, .second-card, .third-card {
+        height: 80%;
+        margin-bottom: 3vw !important;
+        width: 60%;
+        margin: auto;
+    }
     
 
 }
-/* 
+
 @media screen  and (max-width: 625px){
-    .card-btn {
-    width: 13.8vw !important;
-    padding-top: 1% !important;
-    }
-    .vaid-header {padding: 10px 5.32vw;}
-    .up-down {
-        width: 4.5vw;
-    }
-    .each-doctor {
-        width: 100%;
-        margin: auto;
-    }
-    .works {
-        width: 80% !important;
-        margin: auto;
-    }
+  
     
-} */
+}
 
 @media screen and (max-width: 575px){
     .heading-part {font-size: 5vw !important; }
@@ -220,6 +210,9 @@
     .sm-user-name {font-size: 1.7vw;}
     .all-cities {padding-left: 17%;}
     .cities-name {font-size: 2.5vw !important;}
-    
+    .footer-top {display: none;}
+    .footer-part {padding: 0 0 2% 0;}
+    .copy-right {font-size: 2.24vw;}
+
     
 }
