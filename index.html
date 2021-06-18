@@ -19,49 +19,72 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- to add some javascript -->
+    <script type="text/javascript" src="./resources/script/script.js"> </script>
+
     <title>Vaid-ui-Shakya</title>
 </head>
 <body>
-    <header class="vaid-header">
-        <div class="d-flex align-items-center ">
+    <header class="vaid-header ">
+        <div class="d-flex align-items-center container ">
             <div><img src="./resources/icons/vaid-blue-logo.svg"  class="vaid-icon" alt="vaid-icon"></div>
             <div class="lang ">Language</div>
             <div class="lang-menu ml-3">
                 <form name="languages" id="lg-form" action="#" >
-                    <select class="lang-menu">
-                      <option value="English" selected >English</option>
-                      <option value="Hindi">Hindi</option>
-                      <option value="British English">British English</option>
-                      <option value="Tamil">Tamil</option>
-                    </select>
+                    <div class="position-relative">
+                        <select class="lang-menu">
+                            <option value="English" selected >English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="British English">British English</option>
+                            <option value="Tamil">Tamil</option>
+                          </select>
+                            <div class="lang-drop-dwon-icon position-absolute">
+                              <img class="drop-down-icon" src="/resources/icons/chevron-down.svg" alt="chevron-down">
+                            </div>
+                    </div>
                   </form>
             </div>
             <div class="user-profile  ml-auto d-flex align-items-center  position-relative">
                 <span><img src="./resources/img/photo-of-man-wearing-white-shirt-2770600.png" class="profile-pic" alt="profile-pic"></span>
                 <span class="ml-2">Alex Samuel</span>
-                <!-- <span class="ellipsis-vertical ml-2"><img src="./resources/icons/ellipsis-vertical.svg" class="vertical"></span> -->
-                <span class="chevron-down ml-2"><img src="./resources/icons/chevron-down (1).svg" class="up-down" alt="chevron-down"></span>
+                <span class="chevron-down ml-2">
+                    <div class="btn" onclick="ShowAndHide()">
+                            <img src="./resources/icons/chevron-down (1).svg" id="down-chevron" class="up-down" alt="chevron-down">
+                    </div>
+                    
+                </span>
                 <span class=" chevron-up ml-2"><img src="./resources/icons/chevron-up.svg" class="up-down" alt="chevron-up"></span>
-                <div class="dropdown-content position-absolute">
+                <!-- drop-down-content -->
+                <div id="profile" class="dropdown-content position-absolute">
                     <div class="each-line">
-                        <span><img src="./resources/icons/user-alt-solid.svg" class="profile-icons" alt=""></span>
-                        <span>My Profile</span>
+                        <a href="#">
+                            <span><img src="./resources/icons/user-alt-solid.svg" class="profile-icons" alt=""></span>
+                            <span>My Profile</span>
+                        </a>
                     </div>
                     <div  class="each-line">
-                        <span><img src="./resources/icons/file-invoice-solid.svg" class="profile-icons"  alt=""></span>
-                        <span>Appointments</span>
+                        <a href="#">
+                            <span><img src="./resources/icons/file-invoice-solid.svg" class="profile-icons"  alt=""></span>
+                            <span>Appointments</span>
+                        </a>
                     </div>
                     <div class="each-line">
-                        <span><img src="./resources/icons/chatbox.svg" class="profile-icons"  alt=""></span>
-                        <span>Chats</span>
+                        <a href="#">
+                            <span><img src="./resources/icons/chatbox.svg" class="profile-icons"  alt=""></span>
+                            <span>Chats</span>
+                        </a>
                     </div>
                     <div class="each-line">
-                        <span><img src="./resources/icons/settings-sharp.svg" class="profile-icons"  alt=""></span>
-                        <span>Settings</span>
+                        <a href="#">
+                            <span><img src="./resources/icons/settings-sharp.svg" class="profile-icons"  alt=""></span>
+                            <span>Settings</span>
+                        </a>
                     </div>
                     <div  class="each-line">
-                        <span><img src="./resources/icons/log-out.svg" class="profile-icons"  alt=""></span>
-                        <span>Logout</span>
+                        <a href="#">
+                            <span><img src="./resources/icons/log-out.svg" class="profile-icons"  alt=""></span>
+                            <span>Logout</span>
+                        </a>
                     </div>
                   </div>
             </div>
@@ -78,13 +101,18 @@
           <div class="d-flex justify-content-center ">
               <div>
                 <form name="places" id="lg-form" action="#" >
-                    <select class="places-menue">
-                      <option value="English" selected >Bengalore</option>
-                      <option value="Hindi">Mohali</option>
-                      <option value="British English">Ahemdabad</option>
-                      <option value="Tamil">Tamil Nadu</option>
-                    </select>
-                  </form>
+                    <div class="position-relative">
+                        <select class="places-menue">
+                            <option value="English" selected >Bengalore</option>
+                            <option value="Hindi">Mohali</option>
+                            <option value="British English">Ahemdabad</option>
+                            <option value="Tamil">Tamil Nadu</option>
+                          </select>
+                        <div class="city-drop-dwon-icon position-absolute">
+                            <img class="drop-down-icon" src="/resources/icons/chevron-down-w.svg" alt="chevron-down">
+                        </div>
+                    </div>
+                </form>
               </div>
               <div class="position-relative ">
                   <input type="text" class="input-box" placeholder="Search for a Specialty">
@@ -95,7 +123,7 @@
       </div>
     </section>
     <!-- what are you lookin for -->
-    <section class="looking-for maintain-width mb-5">
+    <section class="looking-for container mb-5">
         <h2 class="heading-part">What are you looking for?</h2>
         <div class="row mt-4">
             <div class="col-lg-4 col-md-4 col-sm-12">
@@ -125,7 +153,7 @@
         </div>
     </section>
     <!-- What kind of doctor do you need -->
-    <section class="kind-of-doctor maintain-width ">
+    <section class="kind-of-doctor container ">
         <h2 class="heading-part">What kind of doctor do you need ?</h2>
         <p class="doctors-accros mt-2 mb-4">66 doctors across 7 specialities</p>
         <div class="row kind-of-dr">
@@ -182,7 +210,7 @@
 
     <!-- How It Works -->
     <section class="how-it-works">
-        <div class=" maintain-width">
+        <div class=" container">
             <h2 class=" heading-part text-center ">How It Works</h2>
             <div class="row how-it">
                 <div class="works col-lg-4 col-md-4 col-sm-6">
@@ -211,7 +239,7 @@
     </section>
 
     <!-- Our Customers Say the Nicest Things (Ratting) -->
-    <section class="ratting maintain-width ">
+    <section class="ratting container">
         <h2 class="heading-part text-center">Our Customers Say the Nicest Things</h2>
         <div class="main-ratting-part d-flex justify-content-between">
             <div class="left">
@@ -352,7 +380,7 @@
     <!-- Cities we Operated -->
     <section class="cities-operated  " >
         <h2 class="cities-heading heading-part text-center">Cities we Operated</h2>
-        <div class="row all-cities maintain-width">
+        <div class="row all-cities">
             <div class="col-lg-3 col-sm-6 smal-cl ">
                 <div>
                     <div class="each-city">
@@ -500,34 +528,41 @@
         </div>
     </section>
     <footer class="footer-part ">
-        <div class="footer-top maintain-width">
+        <div class="footer-top container">
             <div class=" d-flex justify-content-start align-items-center">
                 <div>
                     <img src="./resources/icons/vaid-white-logo.svg"  class="vaid-white" alt="vaid-logo-footer">
                 </div>
                 <div class="contact-info d-flex">
-                    <h4 class="f-text">Privacy Policy</h4>
-                    <h4 class="f-text">Terms & Conditions</h4>
-                    <h4 class="f-text">About Us</h4>
-                    <h4 class="f-text">Contact Us</h4>
-                    <h4 class="f-text">Blog</h4>
+                    <a  href="#">Privacy Policy</a>
+                    <a  href="#">Terms & Conditions</a>
+                    <a  href="#">About Us</a>
+                    <a  href="#">Contact Us</a>
+                    <a  href="#">Blog</a>
                 </div>
             </div>
             <div class=" footer-middle d-flex justify-content-between">
                 <div>
-                    <span ><img src="./resources/icons/appStore.svg"  class="appstore" alt=""></span>
-                    <span class="play-s"><img src="./resources/icons/playStore.svg" class="playstore" alt=""></span>
+                    <a href="#"><img src="./resources/icons/appStore.svg"  class="appstore" alt=""></a>
+                    <a href="#" class="play-s"><img src="./resources/icons/playStore.svg" class="playstore" alt=""></a>
                 </div>
                 <div class="d-flex">
-                    <div class="icon-bg d-flex align-items-center justify-content-center">
-                        <img src="./resources/icons/facebook-f-brands.svg" class="fb-icon" alt="facebook">
-                    </div>
-                    <div class="icon-bg d-flex align-items-center justify-content-center">
-                        <img src="./resources/icons/twitter-brands.svg" class="twitter-icon" alt="facebook">
-                    </div>
-                    <div class="icon-bg d-flex align-items-center justify-content-center">
-                        <img src="./resources/icons/instagram-brands.svg" class="insta-icon" alt="facebook">
-                    </div>
+                    
+                    <a href="">
+                        <div class="icon-bg d-flex align-items-center justify-content-center">
+                            <img src="./resources/icons/facebook-f-brands.svg" class="fb-icon" alt="facebook">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon-bg d-flex align-items-center justify-content-center">
+                            <img src="./resources/icons/twitter-brands.svg" class="twitter-icon" alt="facebook">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon-bg d-flex align-items-center justify-content-center">
+                            <img src="./resources/icons/instagram-brands.svg" class="insta-icon" alt="facebook">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
