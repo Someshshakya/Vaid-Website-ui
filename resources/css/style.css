@@ -116,6 +116,9 @@ body {
 .each-line span:last-child {
     padding-left: 0.7vw;
 }
+.header-btnn {
+    padding: 0 !important;
+}
 
 /* ---------------------------------------------------------- */
 /* --------Hero Section----------- */
@@ -197,6 +200,7 @@ body {
     height: 14.25vw;
     border-radius: 6px;
     padding: 10% 0;
+    width: 25.5vw;
 }
 .first-card {
     background-color: #A485BE;
@@ -245,7 +249,7 @@ body {
 }
 
 .dr-img {
-    width: 19.8vw;
+    width: 18.5vw;
     height: 15.5vw;
     object-fit: cover;
 }
@@ -341,14 +345,14 @@ body {
     background-color: #F6F5F5;
 }
 .user-ratting {
-    width: 25.5vw;
+    width: 24.2vw;
     height: 31.2vw;
-    padding:8%;
+    padding:7% 5%;
 }
 .side-by-side {
-    width: 17.2vw;
+    width: 15.2vw;
     height: 22.2vw;
-    padding: 4%;
+    padding: 14% 7%;
 }
 .new-york {
     padding-top:8%;
@@ -390,9 +394,12 @@ body {
     border-top: 1px dashed #B5AFAF;
     padding-top: 8%;
 }
-.left-1 {margin-right: 18.1vw;}
+.left-1 {
+    margin-right: 16vw;
+    padding: 8% 3%;
+}
 .middle-post {
-    left: 25%;
+    left: 23%;
     z-index: 1;
     bottom: -15%;
 }
@@ -406,20 +413,15 @@ body {
 }
 .left-aro,
 .right-aro {
+    top: 45%;
     width: 4vw;
     height: 4vw;
     background-color: #F0F0F0;
     z-index: 1;
     border-radius: 100%; 
 }
-.right-aro {
-    left: -14%;
-    top: 40%;
-}
-.left-aro {
-    right: -10%;
-    top: 40%;
-}
+.left-aro {left: -17%;}
+.right-aro {right: -10%;}
 .chevron {width: 1.6vw;}
 .elipse {width: 1vw;}
 .down-three-elipse {
@@ -482,7 +484,7 @@ body {
     width: 3vw;
     height: 3vw;
     border-radius: 100%;
-    margin-right: 1vw;
+    margin-left: 1vw;
 }
 .fb-icon {width: 0.9vw;}
 .twitter-icon,
