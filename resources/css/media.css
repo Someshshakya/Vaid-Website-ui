@@ -220,6 +220,9 @@
         height: 42.2vw;
         width: 29vw;
     }
+    .right-ratting {margin: auto;}
+    .left-aro {left: -5px;}
+    .right-aro {right: -5px;}
     .sm-appointment, .sm-city {font-size: 1.8vw;}
     .text-after-star {font-size: 1.5vw;}
     .sm-user-name {font-size: 1.7vw;}
